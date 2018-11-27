@@ -2,14 +2,11 @@
   "name": "style-loader-issue352",
   "version": "1.0.0",
   "description": "issue352",
-  "author": "dingpanfeng <dshuhu@gmail.com>",
+  "author": "wusiquan <wsq19850829@gmail.com>",
   "private": true,
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --mode=development --host 0.0.0.0 --inline --progress --config build/webpack.dev.conf.js",
-    "test": "cross-env NODE_ENV=testingenv webpack --config build/webpack.prod.conf.js",
-    "uat": "cross-env NODE_ENV=prerelease webpack --config build/webpack.prod.conf.js",
-    "build": "cross-env NODE_ENV=production webpack --config build/webpack.prod.conf.js",
-    "deploy": "node build/deploy.js"
+    "build": "cross-env NODE_ENV=production webpack --config build/webpack.prod.conf.js"
   },
   "devDependencies": {
     "@babel/core": "^7.1.5",
