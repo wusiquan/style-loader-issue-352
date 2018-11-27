@@ -1,0 +1,148 @@
+article,
+aside,
+blockquote,
+body,
+dd,
+div,
+dl,
+dt,
+fieldset,
+figcaption,
+figure,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+input,
+li,
+menu,
+nav,
+ol,
+p,
+pre,
+section,
+td,
+textarea,
+th,
+ul {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    list-style:none;
+}
+
+article,
+aside,
+blockquote,
+body,
+dd,
+div,
+dl,
+dt,
+fieldset,
+figcaption,
+figure,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup
+li,
+menu,
+nav,
+ol,
+p,
+pre,
+section,
+td,
+th,
+ul {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+html {
+    font-family: sans-serif;
+    -webkit-text-size-adjust: none
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "PingFangSC-Regular";
+	font-size: 26px;
+    color: #494949;
+    background: #030c2b;
+    min-width: 640px;
+    line-height: 1;
+}
+
+article,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+    font-weight: 400
+}
+
+ol,
+ul {
+    list-style: none
+}
+
+a {
+    text-decoration: none;
+    color: #333
+}
+
+em,
+i {
+    font-style: normal
+}
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    vertical-align: middle;
+    outline: 0;
+    border: 0;
+}
+
+button,
+html input[type=button],
+input[type=search],
+input[type=submit] {
+    -webkit-appearance: none
+}
+
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration {
+    -webkit-appearance: none
+}

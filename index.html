@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content="yes" name="apple-touch-fullscreen" />
+  <meta name="format-detection" content="telephone=no,email=no">
+  <meta name="App-Config" content="fullscreen=yes,useHistoryState=yes,transition=yes" />
+  <title>issue352</title>
+  <script>
+    (function (doc, win) {
+      var docEl = doc.documentElement,
+        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+        recalc = function () {
+          var clientWidth = docEl.clientWidth;
+          if (!clientWidth) return;
+          docEl.style.fontSize = window.screen.width / 10 + 'px';
+        };
+      if (!doc.addEventListener) return;
+      win.addEventListener(resizeEvt, recalc, false);
+      doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+  </script>
+</head>
+
+<body>
+
+  <div class="warp">
+    <div style="margin-top:30px;"></div>
+
+    <div class="no1">
+      <div class="no1_warp">
+
+        <div class="swiper-container1">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="no1_finance">
+                <div>
+                  <p>content1</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="no1_data">
+                <div>
+                  <p>content2</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="no1_supply">
+                <div>
+                  <p>content3</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="no1_public">
+                <div>
+                  <p>content4</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
